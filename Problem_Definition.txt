@@ -1,0 +1,32 @@
+
+1- Business Objective
+
+The objective of this project is to predict students' final academic performance based on different factors that may affect their educational outcomes, such as:
+
+1. Study time
+2. Attendance / Absences
+3. Parental education level 
+4. Family support 
+5. Extracurricular activities 
+6. Previous academic grades 
+7. Internet access and school support 
+
+This project helps schools and educational institutions to:
+
+Identify students at risk of poor academic performance
+Improve students' learning outcomes
+Provide academic support to struggling students
+Help teachers and administrators make better educational decisions
+Understand the factors affecting student success
+
+
+2- Target Variable
+
+The target variable in this project is: (G3)
+
+Because it represents the student's final grade, which we are trying to predict using other student-related features.
+
+
+This is considered a:  Regression Problem
+
+Because the target variable (G3) contains numerical values representing students' final grades.
