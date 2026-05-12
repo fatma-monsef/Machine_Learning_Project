@@ -4,8 +4,6 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.neighbors import KNeighborsRegressor  
 from sklearn.preprocessing import StandardScaler 
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 
 df = pd.read_csv('cleaned_student_portuguese.csv', sep=',')

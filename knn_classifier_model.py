@@ -5,8 +5,6 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 
 df = pd.read_csv('cleaned_student_portuguese.csv', sep=',')
