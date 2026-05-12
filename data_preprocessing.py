@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 
 df = pd.read_csv('student-por.csv', sep=';')
 
-
+print(df.isnull().sum())
+print("--------------------------------------------------")
 df = df.drop_duplicates()
 
 
@@ -61,3 +63,17 @@ df.to_csv('cleaned_student_portuguese.csv', index=False)
 print(f"Final Data Shape: {df.shape}")
 print("\n--- Top Correlations with G3 ---")
 print(df.corr()['G3'].sort_values(ascending=False).head(10))
+
+print("-------------------------------------------------")
+
+
+X = df.drop('Result', axis=1)
+y = df['Result']
+
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2,random_state=42)
+
+
+scaler = StandardScaler()
+
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)

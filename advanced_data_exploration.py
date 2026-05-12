@@ -18,7 +18,7 @@ print("\nSkewness of Data:\n", df[numeric_cols].skew())
 print("--------------------------------------------")
 
 
-plt.figure(figsize=(10,8))
+plt.figure(figsize=(12,8))
 sns.heatmap(df.corr(numeric_only=True), annot=True, cmap='coolwarm')
 plt.title('Correlation Matrix')
 plt.show()
