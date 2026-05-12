@@ -40,6 +40,7 @@ print(f"R-squared (R^2): {r2_svr}")
 
 print("--------------------------------------------------------")
 
+# KNN
 knn_model = KNeighborsRegressor(n_neighbors=5)
 knn_model.fit(X_train_std, y_train)
 y_pred_knn = knn_model.predict(X_test_std)
@@ -56,6 +57,7 @@ print(f"R-squared (R^2): {r2_knn}")
 
 print("--------------------------------------------------------")
 
+# RF
 rf_model = RandomForestRegressor(n_estimators=100,random_state=42)
 rf_model.fit(X_train, y_train)
 y_pred_rf = rf_model.predict(X_test)
@@ -72,8 +74,6 @@ print(f"Mean Squared Error (MSE): {mse_rf}")
 print(f"R-squared (R^2): {r2_rf}")
 
 print("--------------------------------------------------------")
-
-
 
 print("SVR R2 =", r2_svr)
 

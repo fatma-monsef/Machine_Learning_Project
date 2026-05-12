@@ -30,7 +30,7 @@ param_grid = {
     'max_features': [None]             
 }
 
-# GridSearchCV هتقوم بتجربة كل الاحتمالات دي وتختار الأحسن
+# GridSearchCV 
 grid_search = GridSearchCV(estimator=RandomForestRegressor(random_state=42), 
                            param_grid=param_grid, 
                            cv=5, 
